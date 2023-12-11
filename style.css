@@ -11,23 +11,36 @@
     font-size: 20pt;
 }
 
-.parallax-section {
-    height: 500px; 
-    padding: 50px 0; 
-  }
-  
-  .image-container {
-    height: 800px; 
-    padding: 50px 0; 
-  }
-  
-  .parallax-content {
-    text-align: center;
-  }
+.intro {
+    margin-top: 50px;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: start;
+    min-height: 80vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.explore-group {
+}
 
 #explore-projects {
     font-size: 50pt;
 }
+
 
 #arrows {
     width: 100px;

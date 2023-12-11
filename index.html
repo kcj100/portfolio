@@ -45,37 +45,41 @@
 
     <section class="bg-dark text-light p-5">
       <div class="container d-flex flex-column align-items-start">
-        <h1 id="name" class="pb-5">Kalil Johnson</h1>
-        <h2>I am a full stack developer</h2>
-        <p id="dev-description">
-          Specializing in Java, Spring Boot, SQL, Bootstrap, HTML, CSS.
-        </p>
+        <div class="col-md intro">
+          <h1 id="name" class="pb-5 hidden">Kalil Johnson</h1>
+          <h2 class="hidden">I am a full stack developer</h2>
+          <p id="dev-description" class="hidden">
+            Specializing in Java, Spring Boot, SQL, Bootstrap, HTML, CSS.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section class="parallax-section">
-        <div class="container d-flex flex-column align-items-center">
-          <div class="parallax-content">
+    <section class="hidden">
+      <div class="container d-flex flex-column align-items-center col-md">
+        <div class=" explore-group text-center">
             <h1 id="explore-projects">Explore projects</h1>
             <img
-              id="arrows"
-              src="images/arrows_pointing_down_2.png"
-              alt="three arrows pointing down"
+            id="arrows"
+            src="images/arrows_pointing_down_2.png"
+            alt="three arrows pointing down"
+            />
+        </div>
+    </div>
+    </section>
+
+    <section class="hidden">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="parallax">
+          <div class="col-md">
+            <img
+              src="images/simple-weather-app.png"
+              alt="simple-weather-app picture"
             />
           </div>
         </div>
-      </section>
-      
-      <section class="image-container">
-        <div class="container d-flex flex-column align-items-center">
-          <div class="parallax">
-            <div class="col-md">
-              <img src="images/simple-weather-app.png" alt="simple-weather-app picture">
-            </div>
-          </div>
-        </div>
-      </section>
-      
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

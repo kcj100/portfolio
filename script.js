@@ -1,6 +1,14 @@
-let bg = document.querySelector('body .section_1')
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList,remove('show');
+        }
+    });
+});
 
-document.addEventListener('scroll', () => {        
-  let x = window.pageYOffset
-  bg.style.backgroundSize = (100 + x/10)+'% auto'
-})
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
